@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StaxTech Internship - Learn, Build, Grow</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Sticky Apply Banner -->
+    <div id="stickyBanner" class="fixed top-0 left-0 right-0 bg-gradient-to-r from-blue-600 to-purple-600 text-white py-2.5 md:py-3 px-3 md:px-4 z-50 shadow-lg">
+        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0">
+            <p class="text-xs sm:text-sm md:text-base font-semibold text-center sm:text-left">🚀 Ready to start your tech journey? Apply now for our internship program!</p>
+            <a href="#apply" class="bg-white text-blue-600 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-bold hover:bg-gray-100 active:scale-95 transition-all duration-200 text-xs sm:text-sm md:text-base whitespace-nowrap">
+                Apply Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Container with Sidebar Offset -->
+    <div class="flex min-h-screen pt-12">
+        <!-- Responsive Sidebar -->
+        <aside id="sidebar" class="fixed lg:static inset-y-0 left-0 z-40 w-64 bg-white shadow-xl transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out pt-14 md:pt-16">
+            <div class="h-full overflow-y-auto py-6 px-4">
+                <div class="mb-8 px-2">
+                    <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-1">StaxTech</h2>
+                    <p class="text-xs md:text-sm text-gray-600">Internship Program</p>
+                </div>
+                <nav class="space-y-1.5">
+                    <a href="#home" class="sidebar-link block px-4 py-2.5 md:py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+                        <span class="font-medium">🏠 Home</span>
+                    </a>
+                    <a href="#tutorials" class="sidebar-link block px-4 py-2.5 md:py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+                        <span class="font-medium">📚 Tutorials</span>
+                    </a>
+                    <a href="#projects" class="sidebar-link block px-4 py-2.5 md:py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+                        <span class="font-medium">💼 Projects</span>
+                    </a>
+                    <a href="about.html" class="sidebar-link block px-4 py-2.5 md:py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+                        <span class="font-medium">ℹ️ About Us</span>
+                    </a>
+                    <a href="#contact" class="sidebar-link block px-4 py-2.5 md:py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+                        <span class="font-medium">📧 Contact</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Sidebar Overlay (Mobile) -->
+        <div id="sidebarOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden hidden"></div>
+
+        <!-- Main Content -->
+        <main class="flex-1 lg:ml-64">
+            <!-- Hamburger Menu Button (Mobile) -->
+            <button id="hamburgerBtn" class="fixed top-14 md:top-16 left-3 md:left-4 z-40 lg:hidden bg-white p-2.5 rounded-lg shadow-lg hover:bg-gray-100 active:scale-95 transition-all duration-200">
+                <svg class="w-5 h-5 md:w-6 md:h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <!-- Hero Section / Welcome Banner -->
+            <section id="home" class="relative bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white py-16 sm:py-20 md:py-28 lg:py-32 px-4 sm:px-6">
+                <div class="container mx-auto max-w-6xl">
+                    <div class="text-center">
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-fade-in leading-tight">
+                            Welcome to StaxTech Internship
+                        </h1>
+                        <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed px-2">
+                            Empowering the next generation of developers through hands-on learning, real-world projects, and mentorship. 
+                            Join us to transform your passion for technology into professional expertise.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mt-8 sm:mt-10 px-4">
+                            <a href="#tutorials" class="cta-button bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg shadow-xl hover:scale-105 active:scale-95 transition-all duration-200 w-full sm:w-auto text-center">
+                                Start Learning
+                            </a>
+                            <a href="#projects" class="cta-button bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg hover:bg-white hover:text-blue-600 active:scale-95 transition-all duration-200 w-full sm:w-auto text-center">
+                                Browse Projects
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Stats Section -->
+            <section class="py-12 sm:py-16 md:py-20 bg-white">
+                <div class="container mx-auto max-w-6xl px-4 sm:px-6">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 sm:mb-12">
+                        Our Impact
+                    </h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                        <!-- Stat Card 1 -->
+                        <div class="stat-card bg-gradient-to-br from-blue-50 to-blue-100 p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                            <div class="text-4xl sm:text-5xl font-bold text-blue-600 mb-2 sm:mb-3">50+</div>
+                            <div class="text-lg sm:text-xl font-semibold text-gray-800 mb-1 sm:mb-2">Universities</div>
+                            <p class="text-sm sm:text-base text-gray-600">Partnered institutions worldwide</p>
+                        </div>
+                        <!-- Stat Card 2 -->
+                        <div class="stat-card bg-gradient-to-br from-purple-50 to-purple-100 p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                            <div class="text-4xl sm:text-5xl font-bold text-purple-600 mb-2 sm:mb-3">10K+</div>
+                            <div class="text-lg sm:text-xl font-semibold text-gray-800 mb-1 sm:mb-2">Students</div>
+                            <p class="text-sm sm:text-base text-gray-600">Active learners in our program</p>
+                        </div>
+                        <!-- Stat Card 3 -->
+                        <div class="stat-card bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center sm:col-span-2 lg:col-span-1">
+                            <div class="text-4xl sm:text-5xl font-bold text-indigo-600 mb-2 sm:mb-3">100+</div>
+                            <div class="text-lg sm:text-xl font-semibold text-gray-800 mb-1 sm:mb-2">Projects</div>
+                            <p class="text-sm sm:text-base text-gray-600">Real-world projects completed</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tutorials Section -->
+            <section id="tutorials" class="py-12 sm:py-16 md:py-20 bg-gray-50">
+                <div class="container mx-auto max-w-6xl px-4 sm:px-6">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-3 sm:mb-4">
+                        Tutorials
+                    </h2>
+                    <p class="text-center text-gray-600 text-base sm:text-lg max-w-2xl mx-auto mb-8 sm:mb-12 px-2">
+                        Explore our comprehensive collection of tutorials designed to help you master modern web development, 
+                        programming languages, and cutting-edge technologies.
+                    </p>
+                    
+                    <!-- Tutorial Cards Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                        <!-- Tutorial Card 1 -->
+                        <div class="tutorial-card bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3 sm:mb-4 gap-2">
+                                <div class="flex-1">
+                                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2">Python Basics</h3>
+                                    <span class="inline-block px-2.5 sm:px-3 py-1 bg-blue-100 text-blue-700 text-xs sm:text-sm font-semibold rounded-full">Python</span>
+                                </div>
+                                <span class="px-2.5 sm:px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full self-start">Beginner</span>
+                            </div>
+                            <p class="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">Master the fundamentals of Python programming with hands-on exercises.</p>
+                            <div class="mt-3 sm:mt-4">
+                                <div class="flex justify-between text-xs sm:text-sm text-gray-600 mb-1.5 sm:mb-2">
+                                    <span>Progress</span>
+                                    <span class="font-semibold">65%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2 sm:h-2.5">
+                                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 sm:h-2.5 rounded-full transition-all duration-300" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tutorial Card 2 -->
+                        <div class="tutorial-card bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3 sm:mb-4 gap-2">
+                                <div class="flex-1">
+                                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2">JavaScript Advanced</h3>
+                                    <span class="inline-block px-2.5 sm:px-3 py-1 bg-yellow-100 text-yellow-700 text-xs sm:text-sm font-semibold rounded-full">JavaScript</span>
+                                </div>
+                                <span class="px-2.5 sm:px-3 py-1 bg-orange-100 text-orange-700 text-xs font-bold rounded-full self-start">Intermediate</span>
+                            </div>
+                            <p class="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">Deep dive into advanced JavaScript concepts, ES6+, and modern patterns.</p>
+                            <div class="mt-3 sm:mt-4">
+                                <div class="flex justify-between text-xs sm:text-sm text-gray-600 mb-1.5 sm:mb-2">
+                                    <span>Progress</span>
+                                    <span class="font-semibold">40%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2 sm:h-2.5">
+                                    <div class="bg-gradient-to-r from-yellow-500 to-orange-500 h-2 sm:h-2.5 rounded-full transition-all duration-300" style="width: 40%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tutorial Card 3 -->
+                        <div class="tutorial-card bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3 sm:mb-4 gap-2">
+                                <div class="flex-1">
+                                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2">React Fundamentals</h3>
+                                    <span class="inline-block px-2.5 sm:px-3 py-1 bg-cyan-100 text-cyan-700 text-xs sm:text-sm font-semibold rounded-full">React</span>
+                                </div>
+                                <span class="px-2.5 sm:px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full self-start">Beginner</span>
+                            </div>
+                            <p class="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">Learn React from scratch and build your first interactive web applications.</p>
+                            <div class="mt-3 sm:mt-4">
+                                <div class="flex justify-between text-xs sm:text-sm text-gray-600 mb-1.5 sm:mb-2">
+                                    <span>Progress</span>
+                                    <span class="font-semibold">80%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2 sm:h-2.5">
+                                    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-2 sm:h-2.5 rounded-full transition-all duration-300" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tutorial Card 4 -->
+                        <div class="tutorial-card bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3 sm:mb-4 gap-2">
+                                <div class="flex-1">
+                                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2">Node.js Backend</h3>
+                                    <span class="inline-block px-2.5 sm:px-3 py-1 bg-green-100 text-green-700 text-xs sm:text-sm font-semibold rounded-full">Node.js</span>
+                                </div>
+                                <span class="px-2.5 sm:px-3 py-1 bg-orange-100 text-orange-700 text-xs font-bold rounded-full self-start">Intermediate</span>
+                            </div>
+                            <p class="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">Build scalable server-side applications with Node.js and Express.</p>
+                            <div class="mt-3 sm:mt-4">
+                                <div class="flex justify-between text-xs sm:text-sm text-gray-600 mb-1.5 sm:mb-2">
+                                    <span>Progress</span>
+                                    <span class="font-semibold">55%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2 sm:h-2.5">
+                                    <div class="bg-gradient-to-r from-green-500 to-emerald-500 h-2 sm:h-2.5 rounded-full transition-all duration-300" style="width: 55%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tutorial Card 5 -->
+                        <div class="tutorial-card bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3 sm:mb-4 gap-2">
+                                <div class="flex-1">
+                                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2">TypeScript Mastery</h3>
+                                    <span class="inline-block px-2.5 sm:px-3 py-1 bg-indigo-100 text-indigo-700 text-xs sm:text-sm font-semibold rounded-full">TypeScript</span>
+                                </div>
+                                <span class="px-2.5 sm:px-3 py-1 bg-purple-100 text-purple-700 text-xs font-bold rounded-full self-start">Advanced</span>
+                            </div>
+                            <p class="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">Master TypeScript for type-safe, scalable JavaScript applications.</p>
+                            <div class="mt-3 sm:mt-4">
+                                <div class="flex justify-between text-xs sm:text-sm text-gray-600 mb-1.5 sm:mb-2">
+                                    <span>Progress</span>
+                                    <span class="font-semibold">30%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2 sm:h-2.5">
+                                    <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-2 sm:h-2.5 rounded-full transition-all duration-300" style="width: 30%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tutorial Card 6 -->
+                        <div class="tutorial-card bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3 sm:mb-4 gap-2">
+                                <div class="flex-1">
+                                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2">Tailwind CSS Design</h3>
+                                    <span class="inline-block px-2.5 sm:px-3 py-1 bg-teal-100 text-teal-700 text-xs sm:text-sm font-semibold rounded-full">CSS</span>
+                                </div>
+                                <span class="px-2.5 sm:px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full self-start">Beginner</span>
+                            </div>
+                            <p class="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">Create beautiful, responsive designs using Tailwind CSS utility classes.</p>
+                            <div class="mt-3 sm:mt-4">
+                                <div class="flex justify-between text-xs sm:text-sm text-gray-600 mb-1.5 sm:mb-2">
+                                    <span>Progress</span>
+                                    <span class="font-semibold">90%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2 sm:h-2.5">
+                                    <div class="bg-gradient-to-r from-teal-500 to-cyan-500 h-2 sm:h-2.5 rounded-full transition-all duration-300" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="py-12 sm:py-16 md:py-20 bg-white">
+                <div class="container mx-auto max-w-6xl px-4 sm:px-6">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-3 sm:mb-4">
+                        Projects
+                    </h2>
+                    <p class="text-center text-gray-600 text-base sm:text-lg max-w-2xl mx-auto mb-6 sm:mb-8 px-2">
+                        Browse through our portfolio of student projects and see the amazing work our interns have created.
+                    </p>
+                    
+                    <!-- Filter Buttons -->
+                    <div class="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 mb-8 sm:mb-10 px-2">
+                        <button class="filter-btn active px-4 sm:px-6 py-1.5 sm:py-2 rounded-lg font-semibold transition-all duration-200 bg-blue-600 text-white hover:bg-blue-700 active:scale-95 shadow-md text-sm sm:text-base" data-filter="all">
+                            All Projects
+                        </button>
+                        <button class="filter-btn px-4 sm:px-6 py-1.5 sm:py-2 rounded-lg font-semibold transition-all duration-200 bg-gray-200 text-gray-700 hover:bg-gray-300 active:scale-95 text-sm sm:text-base" data-filter="beginner">
+                            Beginner
+                        </button>
+                        <button class="filter-btn px-4 sm:px-6 py-1.5 sm:py-2 rounded-lg font-semibold transition-all duration-200 bg-gray-200 text-gray-700 hover:bg-gray-300 active:scale-95 text-sm sm:text-base" data-filter="intermediate">
+                            Intermediate
+                        </button>
+                        <button class="filter-btn px-4 sm:px-6 py-1.5 sm:py-2 rounded-lg font-semibold transition-all duration-200 bg-gray-200 text-gray-700 hover:bg-gray-300 active:scale-95 text-sm sm:text-base" data-filter="advanced">
+                            Advanced
+                        </button>
+                    </div>
+                    
+                    <!-- Project Cards Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6" id="projectsGrid">
+                        <!-- Project Card 1 - Beginner -->
+                        <div class="project-card bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100" data-level="beginner">
+                            <div class="mb-3 sm:mb-4">
+                                <span class="inline-block px-2.5 sm:px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full mb-2 sm:mb-3">Beginner</span>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-1.5 sm:mb-2">E-Commerce Site</h3>
+                                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Build a fully functional online store with shopping cart and checkout features.</p>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-3 sm:mt-4">
+                                <a href="#" class="flex-1 bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-lg font-semibold text-center hover:bg-blue-700 active:scale-95 transition-all duration-200 text-xs sm:text-sm">
+                                    Try Online
+                                </a>
+                                <a href="#" class="flex-1 bg-gray-200 text-gray-700 px-3 sm:px-4 py-2 rounded-lg font-semibold text-center hover:bg-gray-300 active:scale-95 transition-all duration-200 text-xs sm:text-sm">
+                                    Download Instructions
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 - Intermediate -->
+                        <div class="project-card bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100" data-level="intermediate">
+                            <div class="mb-3 sm:mb-4">
+                                <span class="inline-block px-2.5 sm:px-3 py-1 bg-orange-100 text-orange-700 text-xs font-bold rounded-full mb-2 sm:mb-3">Intermediate</span>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-1.5 sm:mb-2">Task Management App</h3>
+                                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Create a collaborative task management system with real-time updates.</p>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-3 sm:mt-4">
+                                <a href="#" class="flex-1 bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-lg font-semibold text-center hover:bg-blue-700 active:scale-95 transition-all duration-200 text-xs sm:text-sm">
+                                    Try Online
+                                </a>
+                                <a href="#" class="flex-1 bg-gray-200 text-gray-700 px-3 sm:px-4 py-2 rounded-lg font-semibold text-center hover:bg-gray-300 active:scale-95 transition-all duration-200 text-xs sm:text-sm">
+                                    Download Instructions
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 - Advanced -->
+                        <div class="project-card bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100" data-level="advanced">
+                            <div class="mb-3 sm:mb-4">
+                                <span class="inline-block px-2.5 sm:px-3 py-1 bg-red-100 text-red-700 text-xs font-bold rounded-full mb-2 sm:mb-3">Advanced</span>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-1.5 sm:mb-2">Social Media Dashboard</h3>
+                                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Develop a comprehensive analytics dashboard with data visualization.</p>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-3 sm:mt-4">
+                                <a href="#" class="flex-1 bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-lg font-semibold text-center hover:bg-blue-700 active:scale-95 transition-all duration-200 text-xs sm:text-sm">
+                                    Try Online
+                                </a>
+                                <a href="#" class="flex-1 bg-gray-200 text-gray-700 px-3 sm:px-4 py-2 rounded-lg font-semibold text-center hover:bg-gray-300 active:scale-95 transition-all duration-200 text-xs sm:text-sm">
+                                    Download Instructions
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 4 - Beginner -->
+                        <div class="project-card bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100" data-level="beginner">
+                            <div class="mb-3 sm:mb-4">
+                                <span class="inline-block px-2.5 sm:px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full mb-2 sm:mb-3">Beginner</span>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-1.5 sm:mb-2">Personal Portfolio</h3>
+                                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Design and build your own professional portfolio website.</p>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-3 sm:mt-4">
+                                <a href="#" class="flex-1 bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-lg font-semibold text-center hover:bg-blue-700 active:scale-95 transition-all duration-200 text-xs sm:text-sm">
+                                    Try Online
+                                </a>
+                                <a href="#" class="flex-1 bg-gray-200 text-gray-700 px-3 sm:px-4 py-2 rounded-lg font-semibold text-center hover:bg-gray-300 active:scale-95 transition-all duration-200 text-xs sm:text-sm">
+                                    Download Instructions
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 5 - Intermediate -->
+                        <div class="project-card bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100" data-level="intermediate">
+                            <div class="mb-3 sm:mb-4">
+                                <span class="inline-block px-2.5 sm:px-3 py-1 bg-orange-100 text-orange-700 text-xs font-bold rounded-full mb-2 sm:mb-3">Intermediate</span>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-1.5 sm:mb-2">Weather Forecast App</h3>
+                                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Create a weather application with API integration and location services.</p>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-3 sm:mt-4">
+                                <a href="#" class="flex-1 bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-lg font-semibold text-center hover:bg-blue-700 active:scale-95 transition-all duration-200 text-xs sm:text-sm">
+                                    Try Online
+                                </a>
+                                <a href="#" class="flex-1 bg-gray-200 text-gray-700 px-3 sm:px-4 py-2 rounded-lg font-semibold text-center hover:bg-gray-300 active:scale-95 transition-all duration-200 text-xs sm:text-sm">
+                                    Download Instructions
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 6 - Advanced -->
+                        <div class="project-card bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100" data-level="advanced">
+                            <div class="mb-3 sm:mb-4">
+                                <span class="inline-block px-2.5 sm:px-3 py-1 bg-red-100 text-red-700 text-xs font-bold rounded-full mb-2 sm:mb-3">Advanced</span>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-1.5 sm:mb-2">Blockchain Voting System</h3>
+                                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">Build a secure voting platform using blockchain technology.</p>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-3 sm:mt-4">
+                                <a href="#" class="flex-1 bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-lg font-semibold text-center hover:bg-blue-700 active:scale-95 transition-all duration-200 text-xs sm:text-sm">
+                                    Try Online
+                                </a>
+                                <a href="#" class="flex-1 bg-gray-200 text-gray-700 px-3 sm:px-4 py-2 rounded-lg font-semibold text-center hover:bg-gray-300 active:scale-95 transition-all duration-200 text-xs sm:text-sm">
+                                    Download Instructions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Us Section -->
+            <section id="about" class="py-12 sm:py-16 md:py-20 bg-gray-50">
+                <div class="container mx-auto max-w-6xl px-4 sm:px-6">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6 sm:mb-8 md:mb-12">
+                        About Us
+                    </h2>
+                    <p class="text-center text-gray-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed px-2">
+                        StaxTech is committed to providing quality education and hands-on experience to aspiring developers. 
+                        Our internship program bridges the gap between academic learning and industry requirements.
+                    </p>
+                    <div class="text-center mt-6 sm:mt-8">
+                        <a href="about.html" class="inline-block bg-blue-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-blue-700 active:scale-95 transition-all duration-200 text-sm sm:text-base">
+                            Learn More About Us
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="py-12 sm:py-16 md:py-20 bg-white">
+                <div class="container mx-auto max-w-6xl px-4 sm:px-6">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6 sm:mb-8 md:mb-12">
+                        Contact
+                    </h2>
+                    <p class="text-center text-gray-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed px-2">
+                        Have questions? Reach out to us and we'll be happy to help you on your journey.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Apply Section -->
+            <section id="apply" class="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+                <div class="container mx-auto max-w-4xl px-4 sm:px-6 text-center">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">Ready to Apply?</h2>
+                    <p class="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-blue-100 leading-relaxed px-2">
+                        Join thousands of students who are building their future with StaxTech.
+                    </p>
+                    <a href="#apply" class="inline-block bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg shadow-xl hover:scale-105 active:scale-95 transition-all duration-200">
+                        Apply for Internship
+                    </a>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-gray-800 text-white py-6 sm:py-8">
+                <div class="container mx-auto max-w-6xl px-4 sm:px-6 text-center">
+                    <p class="text-sm sm:text-base">&copy; 2024 StaxTech Internship Program. All rights reserved.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+

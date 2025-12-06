@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - StaxTech Internship</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Sticky Apply Banner -->
+    <div id="stickyBanner" class="fixed top-0 left-0 right-0 bg-gradient-to-r from-blue-600 to-purple-600 text-white py-2.5 md:py-3 px-3 md:px-4 z-50 shadow-lg">
+        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0">
+            <p class="text-xs sm:text-sm md:text-base font-semibold text-center sm:text-left">🚀 Ready to start your tech journey? Apply now for our internship program!</p>
+            <a href="index.html#apply" class="bg-white text-blue-600 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-bold hover:bg-gray-100 active:scale-95 transition-all duration-200 text-xs sm:text-sm md:text-base whitespace-nowrap">
+                Apply Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Container with Sidebar Offset -->
+    <div class="flex min-h-screen pt-12">
+        <!-- Responsive Sidebar -->
+        <aside id="sidebar" class="fixed lg:static inset-y-0 left-0 z-40 w-64 bg-white shadow-xl transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out pt-14 md:pt-16">
+            <div class="h-full overflow-y-auto py-6 px-4">
+                <div class="mb-8 px-2">
+                    <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-1">StaxTech</h2>
+                    <p class="text-xs md:text-sm text-gray-600">Internship Program</p>
+                </div>
+                <nav class="space-y-1.5">
+                    <a href="index.html#home" class="sidebar-link block px-4 py-2.5 md:py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+                        <span class="font-medium">🏠 Home</span>
+                    </a>
+                    <a href="index.html#tutorials" class="sidebar-link block px-4 py-2.5 md:py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+                        <span class="font-medium">📚 Tutorials</span>
+                    </a>
+                    <a href="index.html#projects" class="sidebar-link block px-4 py-2.5 md:py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+                        <span class="font-medium">💼 Projects</span>
+                    </a>
+                    <a href="about.html" class="sidebar-link active block px-4 py-2.5 md:py-3 rounded-lg bg-blue-50 text-blue-600 transition-colors duration-200 text-sm md:text-base">
+                        <span class="font-medium">ℹ️ About Us</span>
+                    </a>
+                    <a href="index.html#contact" class="sidebar-link block px-4 py-2.5 md:py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">
+                        <span class="font-medium">📧 Contact</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Sidebar Overlay (Mobile) -->
+        <div id="sidebarOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden hidden"></div>
+
+        <!-- Main Content -->
+        <main class="flex-1 lg:ml-64">
+            <!-- Hamburger Menu Button (Mobile) -->
+            <button id="hamburgerBtn" class="fixed top-14 md:top-16 left-3 md:left-4 z-40 lg:hidden bg-white p-2.5 rounded-lg shadow-lg hover:bg-gray-100 active:scale-95 transition-all duration-200">
+                <svg class="w-5 h-5 md:w-6 md:h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <!-- Page Header -->
+            <section class="relative bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white py-16 sm:py-20 md:py-24 px-4 sm:px-6">
+                <div class="container mx-auto max-w-6xl">
+                    <div class="text-center">
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-fade-in leading-tight">
+                            About StaxTech
+                        </h1>
+                        <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed px-2">
+                            Empowering the next generation of developers through innovation, education, and real-world experience.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mission & Vision Section -->
+            <section class="py-12 sm:py-16 md:py-20 bg-white">
+                <div class="container mx-auto max-w-6xl px-4 sm:px-6">
+                    <!-- Mission -->
+                    <div class="mb-12 sm:mb-16 md:mb-20">
+                        <div class="text-center mb-8 sm:mb-12">
+                            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-3 sm:mb-4">Our Mission</h2>
+                            <div class="w-20 sm:w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+                        </div>
+                        <div class="max-w-4xl mx-auto">
+                            <blockquote class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-gray-700 leading-relaxed text-center italic border-l-4 border-blue-600 pl-4 sm:pl-6 md:pl-8 py-4 sm:py-6 bg-blue-50 rounded-r-lg mx-2 sm:mx-0">
+                                "To bridge the gap between academic learning and industry requirements by providing hands-on, 
+                                project-based internship programs that transform passionate learners into skilled, 
+                                industry-ready developers."
+                            </blockquote>
+                            <p class="text-base sm:text-lg text-gray-600 mt-6 sm:mt-8 text-center max-w-3xl mx-auto leading-relaxed px-2">
+                                At StaxTech, we believe that the best way to learn programming is by doing. Our mission is to create 
+                                an environment where students can work on real-world projects, collaborate with peers, and receive 
+                                mentorship from industry professionals. We are committed to making quality tech education accessible 
+                                to everyone, regardless of their background or experience level.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Vision -->
+                    <div class="mt-12 sm:mt-16 md:mt-20">
+                        <div class="text-center mb-8 sm:mb-12">
+                            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-3 sm:mb-4">Our Vision</h2>
+                            <div class="w-20 sm:w-24 h-1 bg-gradient-to-r from-purple-600 to-indigo-600 mx-auto"></div>
+                        </div>
+                        <div class="max-w-4xl mx-auto">
+                            <blockquote class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-gray-700 leading-relaxed text-center italic border-l-4 border-purple-600 pl-4 sm:pl-6 md:pl-8 py-4 sm:py-6 bg-purple-50 rounded-r-lg mx-2 sm:mx-0">
+                                "To become the leading platform for tech education, recognized globally for producing 
+                                highly skilled developers who drive innovation and excellence in the technology industry."
+                            </blockquote>
+                            <p class="text-base sm:text-lg text-gray-600 mt-6 sm:mt-8 text-center max-w-3xl mx-auto leading-relaxed px-2">
+                                We envision a future where every aspiring developer has access to world-class education and 
+                                mentorship. Our goal is to build a global community of learners, educators, and industry leaders 
+                                who work together to shape the future of technology. Through our programs, we aim to create a 
+                                pipeline of talented developers who are not just technically proficient, but also innovative, 
+                                collaborative, and ready to tackle the challenges of tomorrow.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team/Organization Section -->
+            <section class="py-12 sm:py-16 md:py-20 bg-gray-50">
+                <div class="container mx-auto max-w-6xl px-4 sm:px-6">
+                    <div class="text-center mb-8 sm:mb-12">
+                        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-3 sm:mb-4">Our Team</h2>
+                        <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed px-2">
+                            Meet the passionate individuals who make StaxTech possible. Our team is dedicated to your success.
+                        </p>
+                        <div class="w-20 sm:w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mt-3 sm:mt-4"></div>
+                    </div>
+
+                    <!-- Team Members Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                        <!-- Team Member Card 1 -->
+                        <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+                            <div class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-white text-2xl sm:text-3xl md:text-4xl font-bold shadow-lg">
+                                JD
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-1.5 sm:mb-2">John Davis</h3>
+                            <p class="text-blue-600 font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Chief Executive Officer</p>
+                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                                Visionary leader with 15+ years of experience in tech education and innovation.
+                            </p>
+                        </div>
+
+                        <!-- Team Member Card 2 -->
+                        <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+                            <div class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center text-white text-2xl sm:text-3xl md:text-4xl font-bold shadow-lg">
+                                SM
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-1.5 sm:mb-2">Sarah Martinez</h3>
+                            <p class="text-blue-600 font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Head of Education</p>
+                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                                Curriculum designer passionate about making complex concepts accessible to all learners.
+                            </p>
+                        </div>
+
+                        <!-- Team Member Card 3 -->
+                        <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+                            <div class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center text-white text-2xl sm:text-3xl md:text-4xl font-bold shadow-lg">
+                                MC
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-1.5 sm:mb-2">Michael Chen</h3>
+                            <p class="text-blue-600 font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Lead Technical Mentor</p>
+                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                                Full-stack developer and mentor dedicated to helping students build real-world projects.
+                            </p>
+                        </div>
+
+                        <!-- Team Member Card 4 -->
+                        <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+                            <div class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center text-white text-2xl sm:text-3xl md:text-4xl font-bold shadow-lg">
+                                ER
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-1.5 sm:mb-2">Emily Rodriguez</h3>
+                            <p class="text-blue-600 font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Community Manager</p>
+                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                                Building and nurturing our global community of learners, mentors, and industry partners.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Additional Team Members (Optional - showing more than 4) -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mt-6 sm:mt-8">
+                        <!-- Team Member Card 5 -->
+                        <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+                            <div class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-indigo-400 to-blue-500 flex items-center justify-center text-white text-2xl sm:text-3xl md:text-4xl font-bold shadow-lg">
+                                RK
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-1.5 sm:mb-2">Robert Kim</h3>
+                            <p class="text-blue-600 font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Senior Developer</p>
+                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                                Expert in modern web technologies and passionate about teaching best practices.
+                            </p>
+                        </div>
+
+                        <!-- Team Member Card 6 -->
+                        <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+                            <div class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center text-white text-2xl sm:text-3xl md:text-4xl font-bold shadow-lg">
+                                LT
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-1.5 sm:mb-2">Lisa Thompson</h3>
+                            <p class="text-blue-600 font-semibold mb-2 sm:mb-3 text-sm sm:text-base">UX/UI Design Lead</p>
+                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                                Creating beautiful, intuitive user experiences that make learning enjoyable and effective.
+                            </p>
+                        </div>
+
+                        <!-- Team Member Card 7 -->
+                        <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+                            <div class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-white text-2xl sm:text-3xl md:text-4xl font-bold shadow-lg">
+                                DW
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-1.5 sm:mb-2">David Wilson</h3>
+                            <p class="text-blue-600 font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Platform Architect</p>
+                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                                Building scalable infrastructure to support thousands of learners worldwide.
+                            </p>
+                        </div>
+
+                        <!-- Team Member Card 8 -->
+                        <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+                            <div class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-violet-400 to-purple-500 flex items-center justify-center text-white text-2xl sm:text-3xl md:text-4xl font-bold shadow-lg">
+                                AJ
+                            </div>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-1.5 sm:mb-2">Amanda Johnson</h3>
+                            <p class="text-blue-600 font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Student Success Coordinator</p>
+                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                                Ensuring every student has the support they need to succeed in their learning journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Values Section (Bonus) -->
+            <section class="py-12 sm:py-16 md:py-20 bg-white">
+                <div class="container mx-auto max-w-6xl px-4 sm:px-6">
+                    <div class="text-center mb-8 sm:mb-12">
+                        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-3 sm:mb-4">Our Core Values</h2>
+                        <div class="w-20 sm:w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                        <div class="text-center p-5 sm:p-6">
+                            <div class="text-4xl sm:text-5xl mb-3 sm:mb-4">🎯</div>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">Excellence</h3>
+                            <p class="text-sm sm:text-base text-gray-600 leading-relaxed">We strive for excellence in everything we do, from curriculum design to student support.</p>
+                        </div>
+                        <div class="text-center p-5 sm:p-6">
+                            <div class="text-4xl sm:text-5xl mb-3 sm:mb-4">🤝</div>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">Collaboration</h3>
+                            <p class="text-sm sm:text-base text-gray-600 leading-relaxed">We believe in the power of working together and learning from one another.</p>
+                        </div>
+                        <div class="text-center p-5 sm:p-6 sm:col-span-2 lg:col-span-1">
+                            <div class="text-4xl sm:text-5xl mb-3 sm:mb-4">💡</div>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">Innovation</h3>
+                            <p class="text-sm sm:text-base text-gray-600 leading-relaxed">We continuously innovate to provide the best learning experience possible.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-gray-800 text-white py-6 sm:py-8">
+                <div class="container mx-auto max-w-6xl px-4 sm:px-6 text-center">
+                    <p class="text-sm sm:text-base">&copy; 2024 StaxTech Internship Program. All rights reserved.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
